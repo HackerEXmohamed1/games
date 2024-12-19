@@ -1,0 +1,149 @@
+h1, h2, h3, h4, h5, h6, p, li, ul {
+  font-family: cursive;
+}
+.body {
+  background-color: #272B30;
+  margin: auto;
+}
+
+.navbar{
+  z-index: 100000000000000;
+}
+.bar {
+  background-color: #3A497B;
+ 
+}
+.nav-item {
+  font-size: 12px;
+}
+.free {
+  background-color: #3A497B;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+.title_card {
+  font-size: 14px; 
+  font-weight: 600;
+}
+.card-text{
+  font-size: 12px;
+}
+.card-body {
+  padding: 5px 0 0 0 ;
+}
+.platform {
+  background-color: #32383E;
+  font-size: 10px;
+  padding: 5px 8px 0 8px ;
+  border-radius: 10px;
+  font-weight: 900;
+  margin: 0 5px 5px 5px;
+}
+.card {
+  cursor: pointer;
+  padding: 15px;
+transition: 0.5s;
+}
+.card:hover{
+  transform: scale(1.1) ;
+transition: 0.5s;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin:15px auto;
+  position: relative;
+  color: #FFF;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after,
+.loader::before {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  left: 50%;
+  transform: scale(0.5) translate(0, 0);
+  background-color: #FFF;
+  border-radius: 50%;
+  animation: animloader 1s infinite ease-in-out;
+}
+.loader::before {
+  background-color: #FF3D00;
+  transform: scale(0.5) translate(-48px, -48px);
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+@keyframes animloader {
+    50% {
+      transform: scale(1) translate(-50%, -50%);
+}
+}
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100000;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.description_details span {
+  background-color: #0DCAF0;
+  font-size: 10px;
+  padding: 3px 5px;
+  font-weight: bold;
+}
+.details_description {
+  font-size: 12px;
+  font-weight: bold;
+}
+.btn_details {
+  color: white;
+  border: 1px solid var(--bs-warning);
+  padding: 5px 8px ;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: cursive;
+  font-size: 12px;
+}
+.btn_details:hover{
+  background-color: var(--bs-warning) ;
+  transition: all 0.5s;
+}
+.details {
+  height: 100vh;
+  position: absolute;
+  z-index: 999999;
+}
+.icon {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 99999999;
+}
+.navbar-toggler {
+  background-color: white ;
+  border: 1px solid white ;
+}
+@media (max-width: 500px) {
+  body {
+      overflow-x: hidden;
+  }
+}
+
